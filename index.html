@@ -144,10 +144,6 @@
         font-size: 1.02rem;
       }
 
-      .meta-line {
-        font-size: 0.88rem;
-      }
-
       .pill {
         display: inline-flex;
         align-items: center;
@@ -590,7 +586,6 @@
         <div class="logo">OMX30<span>-kompassen</span></div>
         <div class="top-meta">
           <span id="updatedAt" class="clock"></span>
-          <span id="marketDataAt" class="meta-line"></span>
         </div>
       </header>
 
@@ -726,7 +721,6 @@
       };
 
       const updatedAtNode = document.getElementById("updatedAt");
-      const marketDataNode = document.getElementById("marketDataAt");
       const buyCountNode = document.getElementById("buyCount");
       const sellCountNode = document.getElementById("sellCount");
       const holdCountNode = document.getElementById("holdCount");
@@ -1019,10 +1013,7 @@
         drawCards(filteredRows(allRows));
       }
 
-      function setUpdatedTime(generatedAt, latestMarketTime, sourceType = "", useLocalFallback = false) {
-        const technicalStamp = parseDate(generatedAt) || new Date();
-        updatedAtNode.textContent = "Teknisk uppdatering: " + formatStamp(technicalStamp);
-
+      function setUpdatedTime(latestMarketTime, sourceType = "", useLocalFallback = false) {
         const source = String(sourceType).toLowerCase();
         const isReserveData =
           useLocalFallback ||
@@ -1030,16 +1021,16 @@
           source.includes("cached");
 
         if (isReserveData) {
-          marketDataNode.textContent = "Senaste marknadsdata: reservdata (ingen ny hämtning just nu)";
+          updatedAtNode.textContent = "Senaste marknadsdata: reservdata (ingen ny hämtning just nu)";
           return;
         }
 
         if (latestMarketTime) {
-          marketDataNode.textContent = "Senaste marknadsdata: " + formatStamp(latestMarketTime);
+          updatedAtNode.textContent = "Senaste marknadsdata: " + formatStamp(latestMarketTime);
           return;
         }
 
-        marketDataNode.textContent = "Senaste marknadsdata: tid saknas just nu";
+        updatedAtNode.textContent = "Senaste marknadsdata: tid saknas just nu";
       }
 
       async function loadStocksData() {
@@ -1075,11 +1066,11 @@
 
           stocks = normalized;
           const sourceType = String(payload?.source?.type || "").toLowerCase();
-          setUpdatedTime(payload.generatedAt, latestMarketTime, sourceType, false);
+          setUpdatedTime(latestMarketTime, sourceType, false);
         } catch (error) {
           console.warn("Kunde inte läsa omx30.json, fallback aktiverad:", error);
           stocks = [...fallbackStocks];
-          setUpdatedTime(new Date().toISOString(), null, "seed data", true);
+          setUpdatedTime(null, "seed data", true);
         }
       }
 
