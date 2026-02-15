@@ -76,6 +76,9 @@
         color: var(--muted);
         font-size: 0.95rem;
         text-align: right;
+        display: grid;
+        justify-items: end;
+        gap: 2px;
       }
 
       .hero {
@@ -139,6 +142,10 @@
       .clock {
         font-weight: 700;
         font-size: 1.02rem;
+      }
+
+      .meta-line {
+        font-size: 0.88rem;
       }
 
       .pill {
@@ -583,6 +590,7 @@
         <div class="logo">OMX30<span>-kompassen</span></div>
         <div class="top-meta">
           <span id="updatedAt" class="clock"></span>
+          <span id="marketDataAt" class="meta-line"></span>
         </div>
       </header>
 
@@ -718,6 +726,7 @@
       };
 
       const updatedAtNode = document.getElementById("updatedAt");
+      const marketDataNode = document.getElementById("marketDataAt");
       const buyCountNode = document.getElementById("buyCount");
       const sellCountNode = document.getElementById("sellCount");
       const holdCountNode = document.getElementById("holdCount");
@@ -752,6 +761,35 @@
         }
         const date = new Date(value);
         return Number.isNaN(date.getTime()) ? null : date;
+      }
+
+      function parseDate(value) {
+        if (!value) {
+          return null;
+        }
+        const date = value instanceof Date ? value : new Date(value);
+        return Number.isNaN(date.getTime()) ? null : date;
+      }
+
+      function formatStamp(date) {
+        return date.toLocaleString("sv-SE", {
+          weekday: "short",
+          day: "numeric",
+          month: "short",
+          hour: "2-digit",
+          minute: "2-digit"
+        });
+      }
+
+      function latestMarketTimeFromItems(items) {
+        let latest = null;
+        items.forEach((item) => {
+          const marketTime = parseDate(item?.marketTime);
+          if (marketTime && (!latest || marketTime > latest)) {
+            latest = marketTime;
+          }
+        });
+        return latest;
       }
 
       function reportBadge(daysToReport) {
@@ -981,16 +1019,27 @@
         drawCards(filteredRows(allRows));
       }
 
-      function setUpdatedTime(generatedAt, isFallback = false) {
-        const stamp = generatedAt ? new Date(generatedAt) : new Date();
-        const label = isFallback ? "Senast uppdaterad (reservdata): " : "Senast uppdaterad: ";
-        updatedAtNode.textContent = label + stamp.toLocaleString("sv-SE", {
-          weekday: "short",
-          day: "numeric",
-          month: "short",
-          hour: "2-digit",
-          minute: "2-digit"
-        });
+      function setUpdatedTime(generatedAt, latestMarketTime, sourceType = "", useLocalFallback = false) {
+        const technicalStamp = parseDate(generatedAt) || new Date();
+        updatedAtNode.textContent = "Teknisk uppdatering: " + formatStamp(technicalStamp);
+
+        const source = String(sourceType).toLowerCase();
+        const isReserveData =
+          useLocalFallback ||
+          source.includes("seed") ||
+          source.includes("cached");
+
+        if (isReserveData) {
+          marketDataNode.textContent = "Senaste marknadsdata: reservdata (ingen ny hämtning just nu)";
+          return;
+        }
+
+        if (latestMarketTime) {
+          marketDataNode.textContent = "Senaste marknadsdata: " + formatStamp(latestMarketTime);
+          return;
+        }
+
+        marketDataNode.textContent = "Senaste marknadsdata: tid saknas just nu";
       }
 
       async function loadStocksData() {
@@ -1001,6 +1050,7 @@
           }
           const payload = await response.json();
           const items = Array.isArray(payload.items) ? payload.items : [];
+          const latestMarketTime = latestMarketTimeFromItems(items);
           const normalized = items
             .map((item) => ({
               ticker: item.ticker || "",
@@ -1009,7 +1059,8 @@
               change: Number(item.changePercent),
               strength: Number(item.strength),
               event: item.event || "Senaste data från datakällan.",
-              reportDate: item.reportDate || null
+              reportDate: item.reportDate || null,
+              marketTime: item.marketTime || null
             }))
             .filter((item) =>
               item.ticker &&
@@ -1024,15 +1075,11 @@
 
           stocks = normalized;
           const sourceType = String(payload?.source?.type || "").toLowerCase();
-          const isSeedData =
-            sourceType.includes("seed") ||
-            sourceType.includes("cached") ||
-            sourceType.includes("fallback");
-          setUpdatedTime(payload.generatedAt, isSeedData);
+          setUpdatedTime(payload.generatedAt, latestMarketTime, sourceType, false);
         } catch (error) {
           console.warn("Kunde inte läsa omx30.json, fallback aktiverad:", error);
           stocks = [...fallbackStocks];
-          setUpdatedTime(new Date().toISOString(), true);
+          setUpdatedTime(new Date().toISOString(), null, "seed data", true);
         }
       }
 
