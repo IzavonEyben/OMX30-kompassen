@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMX30-kompassen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #d8d1c2;
+        --surface: #fffdf8;
+        --ink: #1f1c2b;
+        --muted: #585565;
+        --line: #d7d1bf;
+        --mint: #b9efbd;
+        --pink: #f7cce7;
+        --blue: #c6ddff;
+        --yellow: #f9de8f;
+        --sage: #d2e2b4;
+        --violet: #d9cdf8;
+        --green: #1f8f5f;
+        --red: #bf3f3f;
+        --amber: #b97007;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Manrope", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 82% 10%, rgba(255, 255, 255, 0.26), transparent 28%),
+          radial-gradient(circle at 8% 24%, rgba(248, 242, 232, 0.32), transparent 24%),
+          var(--bg);
+      }
+
+      .shell {
+        width: min(1280px, 94vw);
+        margin: 0 auto;
+        padding-bottom: 42px;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        margin-top: 20px;
+        padding: 14px 20px;
+        border-radius: 999px;
+        border: 1px solid #ece7d8;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+      }
+
+      .logo {
+        font-family: "Sora", sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.1rem, 2vw, 1.45rem);
+        letter-spacing: -0.03em;
+      }
+
+      .logo span {
+        color: #40b06f;
+      }
+
+      .top-meta {
+        color: var(--muted);
+        font-size: 0.95rem;
+        text-align: right;
+      }
+
+      .hero {
+        margin-top: 20px;
+        display: grid;
+        gap: 14px;
+        grid-template-columns: 1.3fr 0.7fr;
+      }
+
+      .hero-main,
+      .hero-side {
+        border-radius: 30px;
+        border: 1px solid #e8e2d3;
+        background: rgba(255, 255, 255, 0.74);
+      }
+
+      .hero-main {
+        padding: clamp(22px, 4vw, 36px);
+      }
+
+      .hero-main h1 {
+        margin: 0;
+        font-family: "Sora", sans-serif;
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 1;
+        letter-spacing: -0.03em;
+      }
+
+      .hero-main h1 span {
+        background: linear-gradient(120deg, #38bb6b 10%, #6a54e8 48%, #df5689 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .hero-main p {
+        margin: 14px 0 0;
+        max-width: 700px;
+        font-size: clamp(1rem, 1.7vw, 1.3rem);
+        color: #2f2b3a;
+      }
+
+      .microcopy {
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 0.93rem;
+      }
+
+      .hero-side {
+        padding: 20px;
+        display: grid;
+        align-content: start;
+        gap: 14px;
+      }
+
+      .hero-side h2 {
+        margin: 0;
+        font-size: 1.14rem;
+      }
+
+      .clock {
+        font-weight: 700;
+        font-size: 1.02rem;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #f8f4ea;
+        border: 1px solid #e8dfcb;
+        font-size: 0.9rem;
+      }
+
+      .overview {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .mini {
+        border: 1px solid #e5dfcf;
+        border-radius: 24px;
+        padding: 18px;
+      }
+
+      .mini h3 {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #464055;
+      }
+
+      .mini strong {
+        margin-top: 6px;
+        display: block;
+        font-family: "Sora", sans-serif;
+        font-size: clamp(1.7rem, 2.5vw, 2.2rem);
+        letter-spacing: -0.03em;
+      }
+
+      .mini p {
+        margin: 6px 0 0;
+        font-size: 0.91rem;
+        color: #4c4857;
+      }
+
+      .mini-yellow {
+        background: linear-gradient(145deg, rgba(249, 222, 143, 0.76), rgba(255, 252, 240, 0.9));
+      }
+
+      .mini-pink {
+        background: linear-gradient(145deg, rgba(247, 204, 231, 0.8), rgba(255, 245, 251, 0.9));
+      }
+
+      .mini-sage {
+        background: linear-gradient(145deg, rgba(210, 226, 180, 0.75), rgba(244, 250, 232, 0.85));
+      }
+
+      .mini-blue {
+        background: linear-gradient(145deg, rgba(198, 221, 255, 0.8), rgba(245, 250, 255, 0.88));
+      }
+
+      .smart-row {
+        margin-top: 14px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .favorites-panel {
+        border: 1px solid #e5decd;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.82);
+        padding: 16px;
+      }
+
+      .favorites-panel h3 {
+        margin: 0;
+        font-size: 1.06rem;
+      }
+
+      .favorites-panel p {
+        margin: 8px 0 0;
+        color: #585266;
+        font-size: 0.92rem;
+      }
+
+      .favorites-list {
+        margin-top: 12px;
+        display: grid;
+        gap: 9px;
+      }
+
+      .favorite-item {
+        border: 1px solid #e2dbc8;
+        border-radius: 14px;
+        background: #fffaf0;
+        padding: 10px 12px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .favorite-rank {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: #302a41;
+        background: linear-gradient(145deg, #f4df9e, #f6c7de);
+      }
+
+      .favorite-main {
+        display: flex;
+        justify-content: flex-start;
+        gap: 8px;
+        align-items: baseline;
+        flex-wrap: wrap;
+      }
+
+      .favorite-name {
+        font-weight: 800;
+      }
+
+      .favorite-ticker {
+        color: #6e667f;
+        font-size: 0.84rem;
+        margin-left: 6px;
+      }
+
+      .favorite-meta {
+        margin-top: 2px;
+        color: #5e576a;
+        font-size: 0.86rem;
+      }
+
+      .thermo-top {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .thermo-value {
+        font-family: "Sora", sans-serif;
+        font-size: 2rem;
+        letter-spacing: -0.03em;
+      }
+
+      .thermo-label {
+        font-size: 0.9rem;
+        color: #595264;
+        font-weight: 700;
+      }
+
+      .thermo-bar {
+        margin-top: 8px;
+        height: 12px;
+        border-radius: 999px;
+        background: #ece2cc;
+        overflow: hidden;
+      }
+
+      .thermo-bar span {
+        display: block;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #d56363 0%, #f6b146 45%, #4dbd74 100%);
+      }
+
+      .thermo-note {
+        margin-top: 9px;
+      }
+
+      .controls {
+        margin-top: 18px;
+        border: 1px solid #e5decd;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .filter-group {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+      }
+
+      .filter-btn {
+        border: 1px solid #d8d0bc;
+        background: #fffaf0;
+        color: #2f2a3d;
+        border-radius: 999px;
+        padding: 10px 13px;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .filter-btn.active {
+        background: #28243a;
+        color: #fff;
+        border-color: transparent;
+      }
+
+      .search {
+        width: min(320px, 100%);
+        border: 1px solid #dfd7c3;
+        background: #fff;
+        border-radius: 12px;
+        padding: 10px 12px;
+        font: inherit;
+      }
+
+      .stock-grid {
+        margin-top: 14px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .stock-card {
+        border-radius: 24px;
+        border: 1px solid #ddd4c1;
+        background: var(--surface);
+        padding: 15px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .stock-card.up {
+        background: linear-gradient(145deg, rgba(192, 237, 196, 0.58), rgba(255, 255, 255, 0.9));
+      }
+
+      .stock-card.down {
+        background: linear-gradient(145deg, rgba(250, 209, 209, 0.58), rgba(255, 255, 255, 0.92));
+      }
+
+      .stock-card.wait {
+        background: linear-gradient(145deg, rgba(255, 233, 189, 0.55), rgba(255, 255, 255, 0.93));
+      }
+
+      .stock-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 10px;
+      }
+
+      .stock-tags {
+        display: grid;
+        gap: 6px;
+        justify-items: end;
+      }
+
+      .stock-name {
+        margin: 0;
+        font-size: 1.08rem;
+      }
+
+      .ticker {
+        color: #665f76;
+        margin-top: 3px;
+        font-size: 0.87rem;
+      }
+
+      .badge {
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 0.77rem;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+      }
+
+      .badge.buy {
+        color: #0d5b3b;
+        background: rgba(62, 200, 122, 0.22);
+      }
+
+      .badge.sell {
+        color: #7e1f1f;
+        background: rgba(216, 83, 83, 0.2);
+      }
+
+      .badge.hold {
+        color: #774d00;
+        background: rgba(252, 187, 57, 0.28);
+      }
+
+      .report-badge {
+        border-radius: 999px;
+        padding: 5px 10px;
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        border: 1px solid #ddd3ba;
+        background: #fff6dd;
+        color: #5f4e22;
+      }
+
+      .report-badge.soon {
+        background: #ffe8c6;
+        color: #7d4b00;
+        border-color: #e8c58c;
+      }
+
+      .report-badge.today {
+        background: #ffd6d6;
+        color: #8b2222;
+        border-color: #e7a4a4;
+      }
+
+      .stock-values {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .metric {
+        border: 1px solid #e2dbc8;
+        border-radius: 13px;
+        padding: 9px;
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .metric .label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #686174;
+      }
+
+      .metric .value {
+        margin-top: 2px;
+        font-size: 0.98rem;
+        font-weight: 800;
+      }
+
+      .metric .value.pos {
+        color: var(--green);
+      }
+
+      .metric .value.neg {
+        color: var(--red);
+      }
+
+      .why {
+        margin: 0;
+        font-size: 0.92rem;
+        color: #363142;
+      }
+
+      .progress {
+        height: 8px;
+        border-radius: 999px;
+        background: #ece4d1;
+        overflow: hidden;
+      }
+
+      .progress span {
+        display: block;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #36af6a, #7f5bff);
+      }
+
+      .legend {
+        margin-top: 14px;
+        border: 1px dashed #ccbfa2;
+        background: rgba(255, 251, 239, 0.75);
+        border-radius: 20px;
+        padding: 16px;
+      }
+
+      .legend h3 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .legend p {
+        margin: 8px 0 0;
+        color: #544f63;
+      }
+
+      .footer-note {
+        margin-top: 14px;
+        color: #5e576a;
+        font-size: 0.9rem;
+      }
+
+      .empty {
+        grid-column: 1 / -1;
+        border: 1px dashed #cebfa0;
+        border-radius: 20px;
+        padding: 18px;
+        background: #fff9e9;
+      }
+
+      @media (max-width: 1100px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .overview {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .stock-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 720px) {
+        .topbar {
+          border-radius: 20px;
+        }
+
+        .overview,
+        .stock-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .stock-values {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="logo">OMX30<span>-kompassen</span></div>
+        <div class="top-meta">
+          <span id="updatedAt" class="clock"></span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <article class="hero-main">
+          <h1>Hej börsen,<br /><span>var snäll idag.</span></h1>
+          <p>
+            Få en snabb överblick av hela OMX30 på en skärm. Varje ruta visar vad som
+            händer just nu, så du lättare ser vart marknaden lutar.
+          </p>
+          <p class="microcopy">
+            Filtrera mellan <strong>Köpläge</strong>, <strong>Säljläge</strong> och
+            <strong>Avvakta</strong>, sök fram bolag direkt och läs en kort förklaring till
+            varje signal.
+          </p>
+        </article>
+
+        <aside class="hero-side">
+          <h2>Dagens läge i korthet</h2>
+          <div class="pill">Marknadshumör: <strong id="moodText">Lugn optimism</strong></div>
+          <div class="pill">Aktier i listan: <strong>30</strong></div>
+          <div class="pill">Rapporter snart: <strong id="soonReportsCount">0 st</strong></div>
+          <div class="pill">Så räknas signalen: <strong>riktning + bolagshändelser + styrka mot OMX30</strong></div>
+        </aside>
+      </section>
+
+      <section class="overview">
+        <article class="mini mini-sage">
+          <h3>Köpläge</h3>
+          <strong id="buyCount">0</strong>
+          <p>Aktier med fler gröna tecken än röda.</p>
+        </article>
+        <article class="mini mini-pink">
+          <h3>Säljläge</h3>
+          <strong id="sellCount">0</strong>
+          <p>Aktier där svagheten dominerar just nu.</p>
+        </article>
+        <article class="mini mini-yellow">
+          <h3>Avvakta</h3>
+          <strong id="holdCount">0</strong>
+          <p>Lite blandat läge. Ingen stress.</p>
+        </article>
+        <article class="mini mini-blue">
+          <h3>Marknadstermometer</h3>
+          <div class="thermo-top">
+            <div id="thermoValue" class="thermo-value">0/100</div>
+            <div id="thermoLabel" class="thermo-label">Neutral</div>
+          </div>
+          <div class="thermo-bar"><span id="thermoFill" style="width:0%"></span></div>
+          <p id="thermoNote" class="thermo-note">Vi väntar på dagens temperatur.</p>
+        </article>
+      </section>
+
+      <section class="smart-row">
+        <article class="favorites-panel">
+          <h3>Topp 3 favoriter att hålla koll på denna vecka</h3>
+          <p>Tre bolag som sticker ut just nu med bra fart, tydlig riktning eller extra intressant läge.</p>
+          <div class="favorites-list" id="favoritesList"></div>
+        </article>
+      </section>
+
+      <section class="controls">
+        <div class="filter-group" id="filterGroup">
+          <button class="filter-btn active" data-filter="alla" type="button">Alla</button>
+          <button class="filter-btn" data-filter="kop" type="button">Bara köpläge</button>
+          <button class="filter-btn" data-filter="salj" type="button">Bara säljläge</button>
+          <button class="filter-btn" data-filter="avvakta" type="button">Bara avvakta</button>
+        </div>
+        <input
+          id="searchInput"
+          class="search"
+          type="search"
+          placeholder="Sök bolag eller ticker..."
+          aria-label="Sök bolag"
+        />
+      </section>
+
+      <section>
+        <div class="stock-grid" id="stockGrid"></div>
+      </section>
+
+      <section class="legend">
+        <h3>Vad betyder signalerna?</h3>
+        <p><strong>Köpläge:</strong> aktien visar fler positiva tecken än negativa.</p>
+        <p><strong>Säljläge:</strong> aktien tappar fart och flera varningsflaggor syns samtidigt.</p>
+        <p><strong>Avvakta:</strong> blandade signaler, så det kan vara smart att vänta på tydligare riktning.</p>
+      </section>
+
+      <p class="footer-note">
+        Viktigt: detta är beslutsstöd, inte personliga råd. Använd signalerna som en enkel kompass och gör alltid en egen bedömning.
+      </p>
+    </div>
+
+    <script>
+      const fallbackStocks = [
+        { ticker: "ABB", name: "ABB", price: 58.1, change: 1.4, strength: 77, event: "Reservdata visas just nu.", reportDate: "2026-04-17" },
+        { ticker: "ALFA", name: "Alfa Laval", price: 431.5, change: 0.8, strength: 71, event: "Reservdata visas just nu.", reportDate: "2026-04-22" },
+        { ticker: "ASSA B", name: "Assa Abloy", price: 305.8, change: -0.4, strength: 54, event: "Reservdata visas just nu.", reportDate: "2026-04-24" },
+        { ticker: "AZN", name: "AstraZeneca", price: 1674.5, change: 0.3, strength: 62, event: "Reservdata visas just nu.", reportDate: "2026-04-30" },
+        { ticker: "ATCO A", name: "Atlas Copco A", price: 201.6, change: 1.1, strength: 76, event: "Reservdata visas just nu.", reportDate: "2026-04-29" },
+        { ticker: "ATCO B", name: "Atlas Copco B", price: 189.2, change: 0.9, strength: 74, event: "Reservdata visas just nu.", reportDate: "2026-04-29" },
+        { ticker: "BOL", name: "Boliden", price: 326.3, change: -1.2, strength: 36, event: "Reservdata visas just nu.", reportDate: "2026-04-23" },
+        { ticker: "ELUX B", name: "Electrolux B", price: 103.1, change: -0.7, strength: 42, event: "Reservdata visas just nu.", reportDate: "2026-04-25" },
+        { ticker: "ERIC B", name: "Ericsson B", price: 62.4, change: 0.2, strength: 57, event: "Reservdata visas just nu.", reportDate: "2026-04-18" },
+        { ticker: "ESSITY B", name: "Essity B", price: 294.2, change: 0.5, strength: 63, event: "Reservdata visas just nu.", reportDate: "2026-04-24" },
+        { ticker: "EVO", name: "Evolution", price: 1208.0, change: -1.6, strength: 31, event: "Reservdata visas just nu.", reportDate: "2026-04-30" },
+        { ticker: "GETI B", name: "Getinge B", price: 207.6, change: 0.4, strength: 61, event: "Reservdata visas just nu.", reportDate: "2026-04-23" },
+        { ticker: "HM B", name: "H&M B", price: 173.4, change: -0.9, strength: 44, event: "Reservdata visas just nu.", reportDate: "2026-03-27" },
+        { ticker: "HEXA B", name: "Hexagon B", price: 122.9, change: 0.7, strength: 67, event: "Reservdata visas just nu.", reportDate: "2026-04-26" },
+        { ticker: "INVE B", name: "Investor B", price: 296.8, change: 1.0, strength: 75, event: "Reservdata visas just nu.", reportDate: "2026-04-23" },
+        { ticker: "INDU C", name: "Industrivärden C", price: 411.7, change: 0.6, strength: 68, event: "Reservdata visas just nu.", reportDate: "2026-04-25" },
+        { ticker: "KINV B", name: "Kinnevik B", price: 102.5, change: 1.8, strength: 79, event: "Reservdata visas just nu.", reportDate: "2026-04-24" },
+        { ticker: "NIBE B", name: "NIBE B", price: 51.8, change: -1.1, strength: 39, event: "Reservdata visas just nu.", reportDate: "2026-05-14" },
+        { ticker: "NDA SE", name: "Nordea", price: 132.6, change: 0.9, strength: 72, event: "Reservdata visas just nu.", reportDate: "2026-04-16" },
+        { ticker: "SAND", name: "Sandvik", price: 239.3, change: 0.6, strength: 69, event: "Reservdata visas just nu.", reportDate: "2026-04-24" },
+        { ticker: "SCA B", name: "SCA B", price: 147.9, change: -0.3, strength: 53, event: "Reservdata visas just nu.", reportDate: "2026-04-28" },
+        { ticker: "SEB A", name: "SEB A", price: 158.4, change: 0.7, strength: 70, event: "Reservdata visas just nu.", reportDate: "2026-04-23" },
+        { ticker: "SHB A", name: "Handelsbanken A", price: 124.1, change: -0.2, strength: 51, event: "Reservdata visas just nu.", reportDate: "2026-04-24" },
+        { ticker: "SKF B", name: "SKF B", price: 214.6, change: -0.6, strength: 46, event: "Reservdata visas just nu.", reportDate: "2026-04-23" },
+        { ticker: "SWED A", name: "Swedbank A", price: 216.9, change: 0.3, strength: 64, event: "Reservdata visas just nu.", reportDate: "2026-04-23" },
+        { ticker: "TEL2 B", name: "Tele2 B", price: 102.3, change: 0.1, strength: 56, event: "Reservdata visas just nu.", reportDate: "2026-04-23" },
+        { ticker: "TELIA", name: "Telia Company", price: 34.7, change: -0.1, strength: 49, event: "Reservdata visas just nu.", reportDate: "2026-04-24" },
+        { ticker: "VOLV B", name: "Volvo B", price: 311.4, change: 1.5, strength: 81, event: "Reservdata visas just nu.", reportDate: "2026-04-24" },
+        { ticker: "SAAB B", name: "Saab B", price: 917.5, change: 1.9, strength: 84, event: "Reservdata visas just nu.", reportDate: "2026-04-26" },
+        { ticker: "SINCH", name: "Sinch", price: 26.9, change: -1.4, strength: 34, event: "Reservdata visas just nu.", reportDate: "2026-04-25" }
+      ];
+
+      let stocks = [...fallbackStocks];
+
+      const state = {
+        filter: "alla",
+        search: ""
+      };
+
+      const updatedAtNode = document.getElementById("updatedAt");
+      const buyCountNode = document.getElementById("buyCount");
+      const sellCountNode = document.getElementById("sellCount");
+      const holdCountNode = document.getElementById("holdCount");
+      const moodTextNode = document.getElementById("moodText");
+      const soonReportsCountNode = document.getElementById("soonReportsCount");
+      const favoritesListNode = document.getElementById("favoritesList");
+      const thermoValueNode = document.getElementById("thermoValue");
+      const thermoLabelNode = document.getElementById("thermoLabel");
+      const thermoFillNode = document.getElementById("thermoFill");
+      const thermoNoteNode = document.getElementById("thermoNote");
+      const stockGridNode = document.getElementById("stockGrid");
+      const filterGroupNode = document.getElementById("filterGroup");
+      const searchNode = document.getElementById("searchInput");
+
+      function startOfDay(date) {
+        return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+      }
+
+      function daysUntil(date) {
+        const today = startOfDay(new Date());
+        const target = startOfDay(date);
+        return Math.round((target.getTime() - today.getTime()) / 86400000);
+      }
+
+      function formatReportDate(date) {
+        return date.toLocaleDateString("sv-SE", { day: "numeric", month: "short" });
+      }
+
+      function parseReportDate(value) {
+        if (!value) {
+          return null;
+        }
+        const date = new Date(value);
+        return Number.isNaN(date.getTime()) ? null : date;
+      }
+
+      function reportBadge(daysToReport) {
+        if (daysToReport === null) {
+          return { className: "normal", text: "Rapportdatum saknas" };
+        }
+        if (daysToReport === 0) {
+          return { className: "today", text: "Rapport idag" };
+        }
+        if (daysToReport === 1) {
+          return { className: "soon", text: "Rapport imorgon" };
+        }
+        if (daysToReport > 1 && daysToReport <= 7) {
+          return { className: "soon", text: "Rapport om " + daysToReport + " dagar" };
+        }
+        return { className: "normal", text: "Rapport om " + daysToReport + " dagar" };
+      }
+
+      function getSignal(stock) {
+        if (stock.strength >= 70 && stock.change > -1) {
+          return { key: "kop", text: "Köpläge", badge: "buy", cardClass: "up" };
+        }
+        if (stock.strength <= 40 || stock.change <= -1.2) {
+          return { key: "salj", text: "Säljläge", badge: "sell", cardClass: "down" };
+        }
+        return { key: "avvakta", text: "Avvakta", badge: "hold", cardClass: "wait" };
+      }
+
+      function whyText(signal) {
+        if (signal.key === "kop") {
+          return "Fler gröna tecken än röda just nu. Kort sagt: medvind, men håll koll på risk.";
+        }
+        if (signal.key === "salj") {
+          return "Flera varningsflaggor blinkar samtidigt. Kort sagt: bromsa och avvakta klarare trend.";
+        }
+        return "Blandat läge. Inte dåligt, inte superklart heller. Ta en kaffe och invänta tydligare signal.";
+      }
+
+      function strengthWidth(strength) {
+        return Math.max(5, Math.min(100, strength));
+      }
+
+      function formatPrice(value) {
+        return Number(value).toFixed(1).replace(".", ",") + " kr";
+      }
+
+      function formatChange(value) {
+        const sign = value > 0 ? "+" : "";
+        return sign + Number(value).toFixed(1).replace(".", ",") + " %";
+      }
+
+      function computeStats(allRows) {
+        const buyCount = allRows.filter((item) => item.signal.key === "kop").length;
+        const sellCount = allRows.filter((item) => item.signal.key === "salj").length;
+        const holdCount = allRows.length - buyCount - sellCount;
+        const avgStrength = Math.round(allRows.reduce((sum, item) => sum + item.stock.strength, 0) / allRows.length);
+        const soonReports = allRows.filter((item) => item.daysToReport !== null && item.daysToReport >= 0 && item.daysToReport <= 7).length;
+        const thermometer = Math.max(0, Math.min(100, Math.round(avgStrength + (buyCount - sellCount) * 2)));
+        return { buyCount, sellCount, holdCount, avgStrength, soonReports, thermometer };
+      }
+
+      function thermometerLabel(value) {
+        if (value >= 72) {
+          return ["Varm medvind", "Många bolag visar positiv utveckling just nu."];
+        }
+        if (value >= 52) {
+          return ["Balansläge", "Marknaden är blandad just nu."];
+        }
+        if (value >= 36) {
+          return ["Lite skakigt", "Marknaden svänger och riktningen är inte helt tydlig."];
+        }
+        return ["Kyligt", "Flera bolag visar svagare utveckling just nu."];
+      }
+
+      function drawOverview(stats) {
+        buyCountNode.textContent = String(stats.buyCount);
+        sellCountNode.textContent = String(stats.sellCount);
+        holdCountNode.textContent = String(stats.holdCount);
+        soonReportsCountNode.textContent = stats.soonReports + " st";
+
+        if (stats.buyCount > stats.sellCount + 4) {
+          moodTextNode.textContent = "Pigg medvind";
+          return;
+        }
+        if (stats.sellCount > stats.buyCount + 4) {
+          moodTextNode.textContent = "Lite skakigt";
+          return;
+        }
+        moodTextNode.textContent = "Lugn optimism";
+      }
+
+      function favoriteScore(row) {
+        let score = row.stock.strength + row.stock.change * 10;
+        if (row.signal.key === "kop") {
+          score += 8;
+        }
+        if (row.signal.key === "salj") {
+          score -= 8;
+        }
+        if (row.daysToReport !== null && row.daysToReport >= 0 && row.daysToReport <= 7) {
+          score += 2;
+        }
+        return Math.round(score);
+      }
+
+      function drawFavorites(allRows) {
+        const top = [...allRows]
+          .sort((a, b) => favoriteScore(b) - favoriteScore(a))
+          .slice(0, 3);
+
+        favoritesListNode.innerHTML = top
+          .map((row, idx) => {
+            let reportText = "rapportdatum saknas";
+            if (row.daysToReport === 0) {
+              reportText = "rapport idag";
+            } else if (row.daysToReport !== null && row.daysToReport > 0) {
+              reportText = "rapport om " + row.daysToReport + " dagar";
+            }
+            return `
+              <article class="favorite-item">
+                <div class="favorite-rank">${idx + 1}</div>
+                <div>
+                  <div class="favorite-main">
+                    <div><span class="favorite-name">${row.stock.name}</span><span class="favorite-ticker">${row.stock.ticker}</span></div>
+                  </div>
+                  <div class="favorite-meta">${row.signal.text} · ${formatChange(row.stock.change)} senaste handelsdag · ${reportText}</div>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      function drawThermometer(stats) {
+        const [label, note] = thermometerLabel(stats.thermometer);
+        thermoValueNode.textContent = stats.thermometer + "/100";
+        thermoLabelNode.textContent = label;
+        thermoFillNode.style.width = stats.thermometer + "%";
+        thermoNoteNode.textContent = note;
+      }
+
+      function filteredRows(allRows) {
+        return allRows.filter((item) => {
+          const byFilter = state.filter === "alla" || item.signal.key === state.filter;
+          const q = state.search.trim().toLowerCase();
+          const bySearch =
+            q.length === 0 ||
+            item.stock.name.toLowerCase().includes(q) ||
+            item.stock.ticker.toLowerCase().includes(q);
+          return byFilter && bySearch;
+        });
+      }
+
+      function drawCards(rows) {
+        if (rows.length === 0) {
+          stockGridNode.innerHTML = '<article class="empty">Inget bolag matchar filtret just nu. Testa att rensa sökningen eller byta knapp.</article>';
+          return;
+        }
+
+        stockGridNode.innerHTML = rows
+          .map(({ stock, signal, reportDate, daysToReport }) => {
+            const changeClass = stock.change >= 0 ? "pos" : "neg";
+            const reason = whyText(signal);
+            const badge = reportBadge(daysToReport);
+            const reportInfo = reportDate
+              ? formatReportDate(reportDate)
+              : "Datum saknas just nu";
+            return `
+              <article class="stock-card ${signal.cardClass}">
+                <div class="stock-head">
+                  <div>
+                    <h3 class="stock-name">${stock.name}</h3>
+                    <div class="ticker">${stock.ticker}</div>
+                  </div>
+                  <div class="stock-tags">
+                    <span class="badge ${signal.badge}">${signal.text}</span>
+                    <span class="report-badge ${badge.className}">${badge.text}</span>
+                  </div>
+                </div>
+
+                <div class="stock-values">
+                  <div class="metric">
+                    <div class="label">Senast pris</div>
+                    <div class="value">${formatPrice(stock.price)}</div>
+                  </div>
+                  <div class="metric">
+                    <div class="label">Senaste handelsdag</div>
+                    <div class="value ${changeClass}">${formatChange(stock.change)}</div>
+                  </div>
+                  <div class="metric">
+                    <div class="label">Styrka</div>
+                    <div class="value">${stock.strength}/100</div>
+                  </div>
+                </div>
+
+                <div class="progress"><span style="width:${strengthWidth(stock.strength)}%"></span></div>
+                <p class="why"><strong>Nästa rapport:</strong> ${reportInfo}. <strong>Varför:</strong> ${reason} ${stock.event}</p>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      function render() {
+        const allRows = stocks.map((stock) => {
+          const parsedDate = parseReportDate(stock.reportDate);
+          let daysToReport = parsedDate ? daysUntil(parsedDate) : null;
+          let reportDate = parsedDate;
+
+          if (daysToReport !== null && daysToReport < 0) {
+            daysToReport = null;
+            reportDate = null;
+          }
+
+          return {
+            stock,
+            signal: getSignal(stock),
+            reportDate,
+            daysToReport
+          };
+        });
+
+        const stats = computeStats(allRows);
+        drawOverview(stats);
+        drawFavorites(allRows);
+        drawThermometer(stats);
+        drawCards(filteredRows(allRows));
+      }
+
+      function setUpdatedTime(generatedAt, isFallback = false) {
+        const stamp = generatedAt ? new Date(generatedAt) : new Date();
+        const label = isFallback ? "Senast uppdaterad (reservdata): " : "Senast uppdaterad: ";
+        updatedAtNode.textContent = label + stamp.toLocaleString("sv-SE", {
+          weekday: "short",
+          day: "numeric",
+          month: "short",
+          hour: "2-digit",
+          minute: "2-digit"
+        });
+      }
+
+      async function loadStocksData() {
+        try {
+          const response = await fetch("./data/omx30.json?ts=" + Date.now(), { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error("Kunde inte läsa datafil (" + response.status + ")");
+          }
+          const payload = await response.json();
+          const items = Array.isArray(payload.items) ? payload.items : [];
+          const normalized = items
+            .map((item) => ({
+              ticker: item.ticker || "",
+              name: item.name || item.ticker || "Okänt bolag",
+              price: Number(item.price),
+              change: Number(item.changePercent),
+              strength: Number(item.strength),
+              event: item.event || "Senaste data från datakällan.",
+              reportDate: item.reportDate || null
+            }))
+            .filter((item) =>
+              item.ticker &&
+              Number.isFinite(item.price) &&
+              Number.isFinite(item.change) &&
+              Number.isFinite(item.strength)
+            );
+
+          if (normalized.length < 20) {
+            throw new Error("För få giltiga rader i datafilen.");
+          }
+
+          stocks = normalized;
+          const sourceType = String(payload?.source?.type || "").toLowerCase();
+          const isSeedData = sourceType.includes("seed");
+          setUpdatedTime(payload.generatedAt, isSeedData);
+        } catch (error) {
+          console.warn("Kunde inte läsa omx30.json, fallback aktiverad:", error);
+          stocks = [...fallbackStocks];
+          setUpdatedTime(new Date().toISOString(), true);
+        }
+      }
+
+      filterGroupNode.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-filter]");
+        if (!button) {
+          return;
+        }
+
+        state.filter = button.dataset.filter;
+        filterGroupNode
+          .querySelectorAll("button[data-filter]")
+          .forEach((node) => node.classList.toggle("active", node === button));
+        render();
+      });
+
+      searchNode.addEventListener("input", () => {
+        state.search = searchNode.value;
+        render();
+      });
+
+      async function init() {
+        await loadStocksData();
+        render();
+      }
+
+      init();
+    </script>
+  </body>
+</html>
