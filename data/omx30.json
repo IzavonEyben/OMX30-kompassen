@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-15T11:30:53.077Z",
+  "generatedAt": "2026-02-15T11:31:07.027Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -192,7 +192,7 @@
       "symbol": "INDUC.ST",
       "price": 0,
       "changePercent": 0,
-      "strength": 62,
+      "strength": 58,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
