@@ -1024,7 +1024,10 @@
 
           stocks = normalized;
           const sourceType = String(payload?.source?.type || "").toLowerCase();
-          const isSeedData = sourceType.includes("seed");
+          const isSeedData =
+            sourceType.includes("seed") ||
+            sourceType.includes("cached") ||
+            sourceType.includes("fallback");
           setUpdatedTime(payload.generatedAt, isSeedData);
         } catch (error) {
           console.warn("Kunde inte läsa omx30.json, fallback aktiverad:", error);
