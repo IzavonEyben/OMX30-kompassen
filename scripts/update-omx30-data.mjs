@@ -18,7 +18,7 @@ const WATCHLIST = [
   { ticker: "HM B", name: "H&M B", symbol: "HM-B.ST" },
   { ticker: "HEXA B", name: "Hexagon B", symbol: "HEXA-B.ST" },
   { ticker: "INVE B", name: "Investor B", symbol: "INVE-B.ST" },
-  { ticker: "INDU C", name: "Industrivarden C", symbol: "INDUC.ST" },
+  { ticker: "INDU C", name: "Industrivarden C", symbol: "INDU-C.ST" },
   { ticker: "KINV B", name: "Kinnevik B", symbol: "KINV-B.ST" },
   { ticker: "NIBE B", name: "NIBE-B", symbol: "NIBE-B.ST" },
   { ticker: "NDA SE", name: "Nordea", symbol: "NDA-SE.ST" },
@@ -39,7 +39,14 @@ const QUOTE_ENDPOINTS = [
   "https://query1.finance.yahoo.com/v7/finance/quote?symbols=",
   "https://query2.finance.yahoo.com/v7/finance/quote?symbols="
 ];
-const CHART_ENDPOINT = "https://query1.finance.yahoo.com/v8/finance/chart/";
+const CHART_ENDPOINTS = [
+  "https://query1.finance.yahoo.com/v8/finance/chart/",
+  "https://query2.finance.yahoo.com/v8/finance/chart/"
+];
+const CHART_QUERIES = [
+  { interval: "5m", range: "1d" },
+  { interval: "1d", range: "1mo" }
+];
 const OUTPUT_FILE = "data/omx30.json";
 
 function clamp(value, min, max) {
@@ -199,48 +206,74 @@ function previousFiniteClose(closes = []) {
 }
 
 async function fetchQuoteFromChart(symbol) {
-  const payload = await fetchJson(
-    `${CHART_ENDPOINT}${encodeURIComponent(symbol)}?interval=1d&range=1mo`
-  );
-  const result = payload?.chart?.result?.[0];
-  if (!result) {
-    throw new Error(`Missing chart result for ${symbol}`);
+  const errors = [];
+  for (const query of CHART_QUERIES) {
+    for (const endpoint of CHART_ENDPOINTS) {
+      try {
+        const payload = await fetchJson(
+          `${endpoint}${encodeURIComponent(symbol)}?interval=${query.interval}&range=${query.range}`
+        );
+        const result = payload?.chart?.result?.[0];
+        if (!result) {
+          throw new Error(`Missing chart result for ${symbol}`);
+        }
+
+        const meta = result.meta ?? {};
+        const closes = result?.indicators?.quote?.[0]?.close ?? [];
+        const timestamps = result?.timestamp ?? [];
+        const latestPoint = latestFinitePoint(closes, timestamps);
+
+        const price = toNumber(meta.regularMarketPrice) ?? latestPoint?.close ?? null;
+        const previousClose =
+          toNumber(meta.chartPreviousClose) ??
+          toNumber(meta.previousClose) ??
+          previousFiniteClose(closes);
+        const regularMarketTime = toNumber(meta.regularMarketTime) ?? latestPoint?.time ?? null;
+        const changePercent =
+          price !== null && previousClose !== null && previousClose !== 0
+            ? ((price - previousClose) / previousClose) * 100
+            : null;
+
+        return {
+          symbol,
+          regularMarketPrice: price,
+          regularMarketPreviousClose: previousClose,
+          regularMarketChangePercent: changePercent,
+          regularMarketTime,
+          marketState: meta.marketState ?? "UNKNOWN",
+          fiftyTwoWeekHigh: toNumber(meta.fiftyTwoWeekHigh),
+          fiftyTwoWeekLow: toNumber(meta.fiftyTwoWeekLow),
+          earningsTimestamp: toNumber(meta.earningsTimestamp),
+          earningsTimestampStart: toNumber(meta.earningsTimestampStart),
+          earningsTimestampEnd: toNumber(meta.earningsTimestampEnd)
+        };
+      } catch (error) {
+        errors.push(`${endpoint}${symbol}?interval=${query.interval}&range=${query.range} -> ${error.message}`);
+      }
+    }
   }
 
-  const meta = result.meta ?? {};
-  const closes = result?.indicators?.quote?.[0]?.close ?? [];
-  const timestamps = result?.timestamp ?? [];
-  const latestPoint = latestFinitePoint(closes, timestamps);
+  throw new Error(`All chart endpoints failed for ${symbol}: ${errors.join(" | ")}`);
+}
 
-  const price = toNumber(meta.regularMarketPrice) ?? latestPoint?.close ?? null;
-  const previousClose =
-    toNumber(meta.chartPreviousClose) ??
-    toNumber(meta.previousClose) ??
-    previousFiniteClose(closes);
-  const regularMarketTime = toNumber(meta.regularMarketTime) ?? latestPoint?.time ?? null;
-  const changePercent =
-    price !== null && previousClose !== null && previousClose !== 0
-      ? ((price - previousClose) / previousClose) * 100
-      : null;
+async function mapWithConcurrency(items, limit, worker) {
+  const results = [];
+  const queue = [...items];
 
-  return {
-    symbol,
-    regularMarketPrice: price,
-    regularMarketPreviousClose: previousClose,
-    regularMarketChangePercent: changePercent,
-    regularMarketTime,
-    marketState: meta.marketState ?? "UNKNOWN",
-    fiftyTwoWeekHigh: toNumber(meta.fiftyTwoWeekHigh),
-    fiftyTwoWeekLow: toNumber(meta.fiftyTwoWeekLow),
-    earningsTimestamp: toNumber(meta.earningsTimestamp),
-    earningsTimestampStart: toNumber(meta.earningsTimestampStart),
-    earningsTimestampEnd: toNumber(meta.earningsTimestampEnd)
-  };
+  async function run() {
+    while (queue.length > 0) {
+      const item = queue.shift();
+      results.push(await worker(item));
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(limit, items.length) }, () => run());
+  await Promise.all(workers);
+  return results;
 }
 
 async function fetchQuotesFromCharts() {
-  const entries = await Promise.all(
-    WATCHLIST.map(async (stock) => {
+  const entries = await mapWithConcurrency(WATCHLIST, 5, async (stock) => {
       try {
         const quote = await fetchQuoteFromChart(stock.symbol);
         return [stock.symbol, quote];
@@ -248,8 +281,7 @@ async function fetchQuotesFromCharts() {
         console.warn(`Chart fetch failed for ${stock.symbol}: ${error.message}`);
         return [stock.symbol, null];
       }
-    })
-  );
+    });
 
   const rows = entries.filter((entry) => Boolean(entry[1]));
   return new Map(rows);
@@ -293,7 +325,7 @@ async function main() {
   let source = {
     provider: "Yahoo Finance quote endpoint",
     type: "exchange-delayed quote feed",
-    schedule: "every 15 minutes on weekdays"
+    schedule: "every 5 minutes on weekdays"
   };
 
   try {
