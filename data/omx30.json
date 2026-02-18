@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-18T23:03:59.421Z",
+  "generatedAt": "2026-02-18T23:59:00.833Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -132,7 +132,7 @@
       "symbol": "EVO.ST",
       "price": 534,
       "changePercent": 0.9833585476550768,
-      "strength": 23,
+      "strength": 24,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
@@ -156,7 +156,7 @@
       "symbol": "HM-B.ST",
       "price": 184,
       "changePercent": -2.3095301300769813,
-      "strength": 71,
+      "strength": 70,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
