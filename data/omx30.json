@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-19T05:15:07.883Z",
+  "generatedAt": "2026-02-19T07:55:47.682Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -96,7 +96,7 @@
       "symbol": "ELUX-B.ST",
       "price": 80.44,
       "changePercent": -1.8066406250000049,
-      "strength": 53,
+      "strength": 52,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
@@ -132,7 +132,7 @@
       "symbol": "EVO.ST",
       "price": 534,
       "changePercent": 0.9833585476550768,
-      "strength": 24,
+      "strength": 23,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
@@ -156,7 +156,7 @@
       "symbol": "HM-B.ST",
       "price": 184,
       "changePercent": -2.3095301300769813,
-      "strength": 70,
+      "strength": 71,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
