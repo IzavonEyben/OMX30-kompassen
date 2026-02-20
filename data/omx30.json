@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-20T21:52:07.738Z",
+  "generatedAt": "2026-02-20T22:59:29.687Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -48,7 +48,7 @@
       "symbol": "AZN.ST",
       "price": 1867.5,
       "changePercent": 0.2953813104189044,
-      "strength": 79,
+      "strength": 82,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
@@ -96,7 +96,7 @@
       "symbol": "ELUX-B.ST",
       "price": 77.28,
       "changePercent": -3.060712493728045,
-      "strength": 46,
+      "strength": 44,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
@@ -156,7 +156,7 @@
       "symbol": "HM-B.ST",
       "price": 182.95,
       "changePercent": -0.8401084010840171,
-      "strength": 73,
+      "strength": 74,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
