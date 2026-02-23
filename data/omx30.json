@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-20T23:55:48.530Z",
+  "generatedAt": "2026-02-23T05:20:02.561Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -96,11 +96,11 @@
       "symbol": "ELUX-B.ST",
       "price": 77.28,
       "changePercent": -3.060712493728045,
-      "strength": 46,
+      "strength": 47,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-02-20T16:29:42.000Z"
+      "marketTime": "2026-02-20T16:29:43.000Z"
     },
     {
       "ticker": "ERIC B",
@@ -160,7 +160,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-02-20T16:29:31.000Z"
+      "marketTime": "2026-02-20T16:29:32.000Z"
     },
     {
       "ticker": "HEXA B",
@@ -168,7 +168,7 @@
       "symbol": "HEXA-B.ST",
       "price": 99.64,
       "changePercent": 0.850202429149801,
-      "strength": 43,
+      "strength": 44,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
@@ -328,7 +328,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-02-20T16:29:42.000Z"
+      "marketTime": "2026-02-20T16:29:43.000Z"
     },
     {
       "ticker": "VOLV B",
