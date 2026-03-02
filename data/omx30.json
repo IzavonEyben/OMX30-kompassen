@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-28T00:00:27.908Z",
+  "generatedAt": "2026-03-02T05:07:39.793Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -136,7 +136,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-02-27T16:29:47.000Z"
+      "marketTime": "2026-02-27T16:29:46.000Z"
     },
     {
       "ticker": "GETI B",
@@ -148,7 +148,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-02-27T16:29:54.000Z"
+      "marketTime": "2026-02-27T16:29:53.000Z"
     },
     {
       "ticker": "HM B",
@@ -256,7 +256,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-02-27T16:29:31.000Z"
+      "marketTime": "2026-02-27T16:29:30.000Z"
     },
     {
       "ticker": "SEB A",
@@ -328,7 +328,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-02-27T16:29:50.000Z"
+      "marketTime": "2026-02-27T16:29:49.000Z"
     },
     {
       "ticker": "VOLV B",
