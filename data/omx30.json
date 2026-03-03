@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-02T23:54:17.506Z",
+  "generatedAt": "2026-03-03T05:06:14.285Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -168,7 +168,7 @@
       "symbol": "HEXA-B.ST",
       "price": 100.55,
       "changePercent": -2.283770651117598,
-      "strength": 39,
+      "strength": 40,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
