@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-03T16:30:10.227Z",
+  "generatedAt": "2026-03-03T19:26:21.269Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -256,7 +256,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-03T16:29:42.000Z"
+      "marketTime": "2026-03-03T16:29:41.000Z"
     },
     {
       "ticker": "SEB A",
@@ -292,7 +292,7 @@
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-03T16:29:32.000Z"
+      "marketTime": "2026-03-03T16:29:31.000Z"
     },
     {
       "ticker": "SWED A",
@@ -304,7 +304,7 @@
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-03T16:29:44.000Z"
+      "marketTime": "2026-03-03T16:29:43.000Z"
     },
     {
       "ticker": "TEL2 B",
@@ -316,7 +316,7 @@
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-03T16:29:44.000Z"
+      "marketTime": "2026-03-03T16:29:43.000Z"
     },
     {
       "ticker": "TELIA",
