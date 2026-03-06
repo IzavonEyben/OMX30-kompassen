@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T00:03:07.880Z",
+  "generatedAt": "2026-03-06T05:01:23.658Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -252,7 +252,7 @@
       "symbol": "SCA-B.ST",
       "price": 116.3,
       "changePercent": -1.524132091447923,
-      "strength": 24,
+      "strength": 25,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
