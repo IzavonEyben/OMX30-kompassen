@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-10T23:52:45.221Z",
+  "generatedAt": "2026-03-11T05:01:02.355Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -96,7 +96,7 @@
       "symbol": "ELUX-B.ST",
       "price": 66.26,
       "changePercent": 2.506188118811888,
-      "strength": 47,
+      "strength": 49,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
@@ -120,7 +120,7 @@
       "symbol": "ESSITY-B.ST",
       "price": 263.4,
       "changePercent": 0.3810975609756098,
-      "strength": 42,
+      "strength": 43,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
