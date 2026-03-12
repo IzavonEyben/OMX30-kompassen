@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-11T23:52:16.764Z",
+  "generatedAt": "2026-03-12T05:06:34.300Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -120,7 +120,7 @@
       "symbol": "ESSITY-B.ST",
       "price": 258.5,
       "changePercent": -1.8602885345482072,
-      "strength": 33,
+      "strength": 34,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
