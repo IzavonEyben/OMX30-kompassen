@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-17T16:42:30.490Z",
+  "generatedAt": "2026-03-17T17:41:41.741Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -28,7 +28,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-22",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-17T16:29:33.000Z"
+      "marketTime": "2026-03-17T16:29:32.000Z"
     },
     {
       "ticker": "ASSA B",
@@ -196,7 +196,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-17T16:29:40.000Z"
+      "marketTime": "2026-03-17T16:29:39.000Z"
     },
     {
       "ticker": "KINV B",
