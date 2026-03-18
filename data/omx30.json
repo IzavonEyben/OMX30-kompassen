@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T16:34:04.250Z",
+  "generatedAt": "2026-03-18T17:40:46.945Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -100,7 +100,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-18T16:29:55.000Z"
+      "marketTime": "2026-03-18T16:29:54.000Z"
     },
     {
       "ticker": "ERIC B",
@@ -328,7 +328,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-18T16:29:59.000Z"
+      "marketTime": "2026-03-18T16:29:58.000Z"
     },
     {
       "ticker": "VOLV B",
