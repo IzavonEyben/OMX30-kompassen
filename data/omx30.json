@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T00:02:46.106Z",
+  "generatedAt": "2026-03-18T03:15:00.286Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -120,7 +120,7 @@
       "symbol": "ESSITY-B.ST",
       "price": 262.7,
       "changePercent": -0.5301022340022847,
-      "strength": 42,
+      "strength": 43,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
@@ -252,7 +252,7 @@
       "symbol": "SCA-B.ST",
       "price": 112.8,
       "changePercent": 0.13315579227695648,
-      "strength": 23,
+      "strength": 24,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
