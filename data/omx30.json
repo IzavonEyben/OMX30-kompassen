@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-19T23:56:31.350Z",
+  "generatedAt": "2026-03-20T01:53:07.842Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -96,7 +96,7 @@
       "symbol": "ELUX-B.ST",
       "price": 60.5,
       "changePercent": -3.968253968253968,
-      "strength": 22,
+      "strength": 23,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
