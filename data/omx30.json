@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T23:55:28.682Z",
+  "generatedAt": "2026-03-23T01:29:03.492Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -40,7 +40,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-20T16:29:37.000Z"
+      "marketTime": "2026-03-20T16:29:36.000Z"
     },
     {
       "ticker": "AZN",
@@ -88,7 +88,7 @@
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-20T16:29:58.000Z"
+      "marketTime": "2026-03-20T16:29:57.000Z"
     },
     {
       "ticker": "ELUX B",
@@ -96,7 +96,7 @@
       "symbol": "ELUX-B.ST",
       "price": 60.04,
       "changePercent": -0.760330578512398,
-      "strength": 31,
+      "strength": 32,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
@@ -196,7 +196,7 @@
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-20T16:29:48.000Z"
+      "marketTime": "2026-03-20T16:29:47.000Z"
     },
     {
       "ticker": "KINV B",
