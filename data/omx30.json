@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-24T18:09:37.391Z",
+  "generatedAt": "2026-03-24T19:20:11.024Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -144,7 +144,7 @@
       "symbol": "GETI-B.ST",
       "price": 183.75,
       "changePercent": 0.9338093930238883,
-      "strength": 28,
+      "strength": 29,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
@@ -204,7 +204,7 @@
       "symbol": "KINV-B.ST",
       "price": 47.62,
       "changePercent": -2.8955954323001665,
-      "strength": 10,
+      "strength": 11,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
@@ -252,7 +252,7 @@
       "symbol": "SCA-B.ST",
       "price": 106.9,
       "changePercent": 0.2814258911819994,
-      "strength": 21,
+      "strength": 23,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
