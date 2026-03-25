@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-25T16:44:42.334Z",
+  "generatedAt": "2026-03-25T17:42:46.910Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -204,7 +204,7 @@
       "symbol": "KINV-B.ST",
       "price": 48.83,
       "changePercent": 2.540949181016382,
-      "strength": 27,
+      "strength": 25,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
