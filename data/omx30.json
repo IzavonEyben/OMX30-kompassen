@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T16:32:11.187Z",
+  "generatedAt": "2026-03-27T17:29:12.486Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -208,7 +208,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-27T16:29:53.000Z"
+      "marketTime": "2026-03-27T16:29:52.000Z"
     },
     {
       "ticker": "NIBE B",
@@ -328,7 +328,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-27T16:29:55.000Z"
+      "marketTime": "2026-03-27T16:29:54.000Z"
     },
     {
       "ticker": "VOLV B",
@@ -364,7 +364,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-27T16:29:57.000Z"
+      "marketTime": "2026-03-27T16:29:56.000Z"
     }
   ]
 }
