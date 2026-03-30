@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T15:37:59.855Z",
+  "generatedAt": "2026-03-30T16:36:29.020Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -352,7 +352,7 @@
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-30T15:29:40.000Z"
+      "marketTime": "2026-03-30T15:29:39.000Z"
     },
     {
       "ticker": "SINCH",
