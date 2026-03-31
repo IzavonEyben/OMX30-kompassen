@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T15:36:18.216Z",
+  "generatedAt": "2026-03-31T16:36:25.848Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -124,7 +124,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-31T15:30:00.000Z"
+      "marketTime": "2026-03-31T15:29:59.000Z"
     },
     {
       "ticker": "EVO",
@@ -256,7 +256,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-03-31T15:29:55.000Z"
+      "marketTime": "2026-03-31T15:29:54.000Z"
     },
     {
       "ticker": "SEB A",
