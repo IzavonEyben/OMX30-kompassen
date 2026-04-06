@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-03T23:57:05.283Z",
+  "generatedAt": "2026-04-06T01:52:26.149Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -120,7 +120,7 @@
       "symbol": "ESSITY-B.ST",
       "price": 244.8,
       "changePercent": -0.12239902080782658,
-      "strength": 26,
+      "strength": 27,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
@@ -160,7 +160,7 @@
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-04-02T10:59:48.000Z"
+      "marketTime": "2026-04-02T10:59:49.000Z"
     },
     {
       "ticker": "HEXA B",
@@ -364,7 +364,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-04-02T10:59:36.000Z"
+      "marketTime": "2026-04-02T10:59:37.000Z"
     }
   ]
 }
