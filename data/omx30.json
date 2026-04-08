@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T15:45:17.168Z",
+  "generatedAt": "2026-04-08T16:45:42.604Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -16,7 +16,7 @@
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-17",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-04-08T15:29:35.000Z"
+      "marketTime": "2026-04-08T15:29:34.000Z"
     },
     {
       "ticker": "ALFA",
@@ -232,7 +232,7 @@
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-16",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-04-08T15:29:58.000Z"
+      "marketTime": "2026-04-08T15:29:57.000Z"
     },
     {
       "ticker": "SAND",
