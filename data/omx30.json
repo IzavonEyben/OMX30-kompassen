@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-15T15:39:04.415Z",
+  "generatedAt": "2026-04-15T16:40:33.414Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -16,7 +16,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-17",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-04-15T15:29:57.000Z"
+      "marketTime": "2026-04-15T15:29:56.000Z"
     },
     {
       "ticker": "ALFA",
@@ -148,7 +148,7 @@
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-04-15T15:29:47.000Z"
+      "marketTime": "2026-04-15T15:29:46.000Z"
     },
     {
       "ticker": "HM B",
