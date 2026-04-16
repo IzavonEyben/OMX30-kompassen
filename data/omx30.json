@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T17:00:52.299Z",
+  "generatedAt": "2026-04-16T18:12:36.704Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -166,13 +166,13 @@
       "ticker": "HEXA B",
       "name": "Hexagon B",
       "symbol": "HEXA-B.ST",
-      "price": 94.52,
-      "changePercent": 0.3184037359371653,
-      "strength": 38,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "price": 99.22,
+      "changePercent": 3.225135247607152,
+      "strength": 50,
+      "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-04-10T15:29:38.000Z"
+      "marketTime": "2026-04-16T15:29:56.000Z"
     },
     {
       "ticker": "INVE B",
