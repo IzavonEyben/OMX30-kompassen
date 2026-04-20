@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T23:58:03.857Z",
+  "generatedAt": "2026-04-20T02:01:13.476Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -148,7 +148,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-04-17T15:29:42.000Z"
+      "marketTime": "2026-04-17T15:29:41.000Z"
     },
     {
       "ticker": "HM B",
