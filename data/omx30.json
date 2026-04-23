@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T00:02:23.457Z",
+  "generatedAt": "2026-04-23T03:38:47.268Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -300,7 +300,7 @@
       "symbol": "SWED-A.ST",
       "price": 327.7,
       "changePercent": -0.24353120243531548,
-      "strength": 66,
+      "strength": 65,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
