@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T00:01:24.500Z",
+  "generatedAt": "2026-04-24T03:40:02.948Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -36,7 +36,7 @@
       "symbol": "ASSA-B.ST",
       "price": 370,
       "changePercent": -0.1618996222342209,
-      "strength": 68,
+      "strength": 67,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
@@ -228,7 +228,7 @@
       "symbol": "NDA-SE.ST",
       "price": 170.65,
       "changePercent": -0.7848837209302293,
-      "strength": 68,
+      "strength": 67,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-16",
       "marketState": "UNKNOWN",
@@ -264,7 +264,7 @@
       "symbol": "SEB-A.ST",
       "price": 180,
       "changePercent": -0.8537592949600723,
-      "strength": 53,
+      "strength": 52,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
