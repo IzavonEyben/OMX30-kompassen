@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-25T01:20:04.923Z",
+  "generatedAt": "2026-04-27T02:05:41.737Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -228,7 +228,7 @@
       "symbol": "NDA-SE.ST",
       "price": 169.75,
       "changePercent": -0.5273952534427223,
-      "strength": 67,
+      "strength": 66,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-16",
       "marketState": "UNKNOWN",
@@ -288,7 +288,7 @@
       "symbol": "SKF-B.ST",
       "price": 230.7,
       "changePercent": -0.9871244635193183,
-      "strength": 54,
+      "strength": 51,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
@@ -348,7 +348,7 @@
       "symbol": "SAAB-B.ST",
       "price": 565,
       "changePercent": -3.632952413440211,
-      "strength": 38,
+      "strength": 36,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
