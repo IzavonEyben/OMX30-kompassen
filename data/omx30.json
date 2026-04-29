@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T00:05:13.425Z",
+  "generatedAt": "2026-04-29T03:57:51.438Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -24,7 +24,7 @@
       "symbol": "ALFA.ST",
       "price": 532.4,
       "changePercent": -1.4803849000740192,
-      "strength": 63,
+      "strength": 62,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-22",
       "marketState": "UNKNOWN",
@@ -264,7 +264,7 @@
       "symbol": "SEB-A.ST",
       "price": 179.65,
       "changePercent": 0.4753914988814285,
-      "strength": 56,
+      "strength": 54,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
@@ -300,7 +300,7 @@
       "symbol": "SWED-A.ST",
       "price": 321.6,
       "changePercent": 0.4686035613870665,
-      "strength": 64,
+      "strength": 63,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
