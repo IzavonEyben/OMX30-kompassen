@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T01:16:44.868Z",
+  "generatedAt": "2026-04-30T04:44:29.404Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -264,7 +264,7 @@
       "symbol": "SEB-A.ST",
       "price": 179.95,
       "changePercent": 0.16699137211243137,
-      "strength": 54,
+      "strength": 53,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
