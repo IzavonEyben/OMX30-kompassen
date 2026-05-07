@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T00:03:35.094Z",
+  "generatedAt": "2026-05-07T03:57:17.970Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -264,7 +264,7 @@
       "symbol": "SEB-A.ST",
       "price": 183.2,
       "changePercent": 2.0612813370473475,
-      "strength": 62,
+      "strength": 61,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
@@ -288,7 +288,7 @@
       "symbol": "SKF-B.ST",
       "price": 242.8,
       "changePercent": 5.336225596529289,
-      "strength": 78,
+      "strength": 77,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
