@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T15:32:48.063Z",
+  "generatedAt": "2026-05-07T17:19:20.486Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -280,7 +280,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-05-07T15:29:51.000Z"
+      "marketTime": "2026-05-07T15:29:50.000Z"
     },
     {
       "ticker": "SKF B",
