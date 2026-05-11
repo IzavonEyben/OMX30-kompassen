@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T01:16:59.344Z",
+  "generatedAt": "2026-05-11T02:31:04.496Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -288,7 +288,7 @@
       "symbol": "SKF-B.ST",
       "price": 237.9,
       "changePercent": -0.3768844221105551,
-      "strength": 56,
+      "strength": 55,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
