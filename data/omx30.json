@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T00:17:06.045Z",
+  "generatedAt": "2026-05-14T04:14:57.889Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -216,7 +216,7 @@
       "symbol": "NIBE-B.ST",
       "price": 41.62,
       "changePercent": -0.9754936949797852,
-      "strength": 56,
+      "strength": 57,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-05-14",
       "marketState": "UNKNOWN",
@@ -312,7 +312,7 @@
       "symbol": "TEL2-B.ST",
       "price": 181.7,
       "changePercent": -1.9163292847503435,
-      "strength": 61,
+      "strength": 60,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
@@ -348,7 +348,7 @@
       "symbol": "SAAB-B.ST",
       "price": 491.6,
       "changePercent": -3.626739854930406,
-      "strength": 21,
+      "strength": 20,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
