@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T01:28:48.146Z",
+  "generatedAt": "2026-05-15T05:30:26.616Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -48,7 +48,7 @@
       "symbol": "AZN.ST",
       "price": 1722,
       "changePercent": -0.11600928074245939,
-      "strength": 61,
+      "strength": 60,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
