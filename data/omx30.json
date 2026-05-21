@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T18:19:16.824Z",
+  "generatedAt": "2026-05-21T20:13:40.661Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
