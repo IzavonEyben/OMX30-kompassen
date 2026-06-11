@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T02:04:02.991Z",
+  "generatedAt": "2026-06-11T06:59:37.671Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -348,7 +348,7 @@
       "symbol": "SAAB-B.ST",
       "price": 524.9,
       "changePercent": 0.1526426254531491,
-      "strength": 38,
+      "strength": 36,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
