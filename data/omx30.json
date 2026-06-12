@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T15:33:37.068Z",
+  "generatedAt": "2026-06-12T17:50:50.255Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -172,7 +172,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-06-12T15:29:52.000Z"
+      "marketTime": "2026-06-12T15:29:51.000Z"
     },
     {
       "ticker": "INVE B",
@@ -328,7 +328,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-06-12T15:29:46.000Z"
+      "marketTime": "2026-06-12T15:29:45.000Z"
     },
     {
       "ticker": "VOLV B",
