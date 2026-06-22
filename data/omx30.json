@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T01:31:24.712Z",
+  "generatedAt": "2026-06-22T03:28:12.464Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -208,7 +208,7 @@
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-06-18T15:29:57.000Z"
+      "marketTime": "2026-06-18T15:29:56.000Z"
     },
     {
       "ticker": "NIBE B",
