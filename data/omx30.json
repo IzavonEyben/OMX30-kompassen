@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T15:36:46.149Z",
+  "generatedAt": "2026-06-24T17:29:25.724Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -16,7 +16,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-17",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-06-24T15:29:50.000Z"
+      "marketTime": "2026-06-24T15:29:49.000Z"
     },
     {
       "ticker": "ALFA",
@@ -52,7 +52,7 @@
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-06-24T15:29:31.000Z"
+      "marketTime": "2026-06-24T15:29:30.000Z"
     },
     {
       "ticker": "ATCO A",
@@ -268,7 +268,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-06-24T15:29:58.000Z"
+      "marketTime": "2026-06-24T15:29:57.000Z"
     },
     {
       "ticker": "SHB A",
