@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T01:30:39.977Z",
+  "generatedAt": "2026-06-29T02:46:16.577Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -40,7 +40,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-06-26T15:29:33.000Z"
+      "marketTime": "2026-06-26T15:29:34.000Z"
     },
     {
       "ticker": "AZN",
@@ -316,7 +316,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-06-26T15:29:44.000Z"
+      "marketTime": "2026-06-26T15:29:43.000Z"
     },
     {
       "ticker": "TELIA",
