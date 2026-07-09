@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T16:12:41.290Z",
+  "generatedAt": "2026-07-09T18:08:10.048Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -167,9 +167,9 @@
       "name": "Hexagon B",
       "symbol": "HEXA-B.ST",
       "price": 80.38,
-      "changePercent": -1.9038320722479893,
-      "strength": 23,
-      "event": "Svag handelsdag i senaste uppdateringen.",
+      "changePercent": 1.746835443037969,
+      "strength": 34,
+      "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-09T15:29:56.000Z"
