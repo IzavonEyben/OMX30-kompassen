@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T21:27:56.390Z",
+  "generatedAt": "2026-07-17T22:21:29.658Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -13,7 +13,7 @@
       "price": 945.2,
       "changePercent": 1.047680136839862,
       "strength": 69,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-17",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:36.000Z"
@@ -25,7 +25,7 @@
       "price": 559.6,
       "changePercent": -1.0258224266006288,
       "strength": 69,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-22",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:51.000Z"
@@ -37,7 +37,7 @@
       "price": 348.4,
       "changePercent": 4.939759036144571,
       "strength": 58,
-      "event": "Stark handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:30.000Z"
@@ -49,7 +49,7 @@
       "price": 1636,
       "changePercent": -0.3350593968930856,
       "strength": 50,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:43.000Z"
@@ -61,7 +61,7 @@
       "price": 195.5,
       "changePercent": 0.17934921854983055,
       "strength": 78,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-29",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:55.000Z"
@@ -73,7 +73,7 @@
       "price": 173.3,
       "changePercent": 0.11554015020220512,
       "strength": 80,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-29",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:32.000Z"
@@ -85,7 +85,7 @@
       "price": 504.4,
       "changePercent": -1.753019088430074,
       "strength": 44,
-      "event": "Svag handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:58.000Z"
@@ -97,7 +97,7 @@
       "price": 23.78,
       "changePercent": -2.5409836065573668,
       "strength": 10,
-      "event": "Svag handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:39.000Z"
@@ -109,7 +109,7 @@
       "price": 95.26,
       "changePercent": -0.6051752921535875,
       "strength": 44,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-18",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:34.000Z"
@@ -121,7 +121,7 @@
       "price": 282.8,
       "changePercent": 4.08538829591462,
       "strength": 82,
-      "event": "Stark handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:41.000Z"
@@ -133,7 +133,7 @@
       "price": 691.4,
       "changePercent": 0.26102088167052706,
       "strength": 49,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:48.000Z"
@@ -145,7 +145,7 @@
       "price": 232.5,
       "changePercent": 10.137375651350073,
       "strength": 100,
-      "event": "Stark handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:54.000Z"
@@ -157,7 +157,7 @@
       "price": 164.55,
       "changePercent": 0.672988681554006,
       "strength": 55,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:52.000Z"
@@ -169,7 +169,7 @@
       "price": 78.76,
       "changePercent": -1.6729088639200866,
       "strength": 22,
-      "event": "Svag handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:56.000Z"
@@ -181,7 +181,7 @@
       "price": 397,
       "changePercent": 0.6847577986304815,
       "strength": 79,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:42.000Z"
@@ -193,7 +193,7 @@
       "price": 519.2,
       "changePercent": -1.06707317073169,
       "strength": 73,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:56.000Z"
@@ -205,7 +205,7 @@
       "price": 49.43,
       "changePercent": -3.4193044157874173,
       "strength": 12,
-      "event": "Svag handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:31.000Z"
@@ -217,7 +217,7 @@
       "price": 36.7,
       "changePercent": 1.0462555066079366,
       "strength": 42,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-05-14",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:46.000Z"
@@ -229,7 +229,7 @@
       "price": 187.85,
       "changePercent": 0.079914757591905,
       "strength": 80,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-16",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:41.000Z"
@@ -239,8 +239,8 @@
       "name": "Sandvik",
       "symbol": "SAND.ST",
       "price": 338.1,
-      "changePercent": -9.332260659694276,
-      "strength": 30,
+      "changePercent": -14.900578907626475,
+      "strength": 14,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
@@ -253,7 +253,7 @@
       "price": 103,
       "changePercent": 2.1318790282597977,
       "strength": 35,
-      "event": "Stark handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:58.000Z"
@@ -265,7 +265,7 @@
       "price": 215.3,
       "changePercent": 0,
       "strength": 80,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:40.000Z"
@@ -277,7 +277,7 @@
       "price": 139.05,
       "changePercent": -0.5720414730067809,
       "strength": 61,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:59.000Z"
@@ -289,7 +289,7 @@
       "price": 249.1,
       "changePercent": -5.643939393939396,
       "strength": 47,
-      "event": "Svag handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:34.000Z"
@@ -301,7 +301,7 @@
       "price": 359.6,
       "changePercent": -2.9943350418127777,
       "strength": 67,
-      "event": "Svag handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:31.000Z"
@@ -311,9 +311,9 @@
       "name": "Tele2 B",
       "symbol": "TEL2-B.ST",
       "price": 161.35,
-      "changePercent": 0.3732503888024848,
-      "strength": 40,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "changePercent": -8.27174530983514,
+      "strength": 16,
+      "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:44.000Z"
@@ -325,7 +325,7 @@
       "price": 46.25,
       "changePercent": 2.0520741394527793,
       "strength": 68,
-      "event": "Stark handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:39.000Z"
@@ -337,7 +337,7 @@
       "price": 339.1,
       "changePercent": -0.6445941986522088,
       "strength": 72,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:41.000Z"
@@ -349,7 +349,7 @@
       "price": 567,
       "changePercent": 9.734855815753813,
       "strength": 71,
-      "event": "Stark handelsdag i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:50.000Z"
@@ -361,7 +361,7 @@
       "price": 39.06,
       "changePercent": -1.2389380530973322,
       "strength": 66,
-      "event": "Lugnt handelslage i senaste uppdateringen.",
+      "event": "Reservdata visas just nu.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
       "marketTime": "2026-07-17T15:29:52.000Z"
