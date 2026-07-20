@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T00:08:12.150Z",
+  "generatedAt": "2026-07-20T02:49:46.442Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -276,7 +276,7 @@
       "symbol": "SHB-A.ST",
       "price": 139.05,
       "changePercent": -0.5720414730067809,
-      "strength": 61,
+      "strength": 60,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
