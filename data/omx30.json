@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T15:36:42.049Z",
+  "generatedAt": "2026-07-27T17:19:55.418Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -328,7 +328,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-07-27T15:29:59.000Z"
+      "marketTime": "2026-07-27T15:29:58.000Z"
     },
     {
       "ticker": "VOLV B",
