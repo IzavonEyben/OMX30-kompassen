@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T15:32:13.781Z",
+  "generatedAt": "2026-08-07T00:29:13.866Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -256,7 +256,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-06T15:29:39.000Z"
+      "marketTime": "2026-08-06T15:29:38.000Z"
     },
     {
       "ticker": "SEB A",
