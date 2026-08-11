@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T00:03:59.476Z",
+  "generatedAt": "2026-08-11T02:20:55.803Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -24,7 +24,7 @@
       "symbol": "ALFA.ST",
       "price": 570.8,
       "changePercent": 0.3163444639718725,
-      "strength": 76,
+      "strength": 75,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-22",
       "marketState": "UNKNOWN",
