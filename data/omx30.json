@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T01:22:10.128Z",
+  "generatedAt": "2026-08-14T03:31:28.154Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -324,7 +324,7 @@
       "symbol": "TELIA.ST",
       "price": 43.34,
       "changePercent": 0.48690006955715476,
-      "strength": 53,
+      "strength": 52,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
