@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:37:20.163Z",
+  "generatedAt": "2026-08-25T16:16:34.060Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -124,7 +124,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-25T15:29:34.000Z"
+      "marketTime": "2026-08-25T15:29:33.000Z"
     },
     {
       "ticker": "EVO",
@@ -148,7 +148,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-25T15:29:30.000Z"
+      "marketTime": "2026-08-25T15:29:29.000Z"
     },
     {
       "ticker": "HM B",
