@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T11:14:39.651Z",
+  "generatedAt": "2026-08-26T11:46:05.667Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -10,37 +10,37 @@
       "ticker": "ABB",
       "name": "ABB",
       "symbol": "ABB.ST",
-      "price": 939,
-      "changePercent": 0.08526966531655879,
+      "price": 939.8,
+      "changePercent": 0.17053933063311758,
       "strength": 65,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-17",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:30.000Z"
+      "marketTime": "2026-08-26T11:45:22.000Z"
     },
     {
       "ticker": "ALFA",
       "name": "Alfa Laval",
       "symbol": "ALFA.ST",
-      "price": 578.6,
-      "changePercent": 0.6260869565217431,
-      "strength": 79,
+      "price": 580,
+      "changePercent": 0.8695652173913043,
+      "strength": 80,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-22",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:34.000Z"
+      "marketTime": "2026-08-26T11:44:36.000Z"
     },
     {
       "ticker": "ASSA B",
       "name": "Assa Abloy",
       "symbol": "ASSA-B.ST",
-      "price": 355.5,
-      "changePercent": 0.708215297450425,
-      "strength": 52,
+      "price": 356.4,
+      "changePercent": 0.9631728045325715,
+      "strength": 53,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:12:25.000Z"
+      "marketTime": "2026-08-26T11:42:28.000Z"
     },
     {
       "ticker": "AZN",
@@ -52,319 +52,319 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:30.000Z"
+      "marketTime": "2026-08-26T11:45:45.000Z"
     },
     {
       "ticker": "ATCO A",
       "name": "Atlas Copco A",
       "symbol": "ATCO-A.ST",
-      "price": 206.8,
-      "changePercent": 1.3228809407153441,
+      "price": 207,
+      "changePercent": 1.420872121509067,
       "strength": 81,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-29",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:37.000Z"
+      "marketTime": "2026-08-26T11:44:23.000Z"
     },
     {
       "ticker": "ATCO B",
       "name": "Atlas Copco B",
       "symbol": "ATCO-B.ST",
-      "price": 180.2,
-      "changePercent": 1.0372862349313117,
-      "strength": 79,
+      "price": 180.45,
+      "changePercent": 1.1774600504625703,
+      "strength": 80,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-29",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:28.000Z"
+      "marketTime": "2026-08-26T11:45:58.000Z"
     },
     {
       "ticker": "BOL",
       "name": "Boliden",
       "symbol": "BOL.ST",
-      "price": 588.6,
-      "changePercent": 2.4008350730689054,
-      "strength": 67,
+      "price": 590,
+      "changePercent": 2.644398051496181,
+      "strength": 68,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:54.000Z"
+      "marketTime": "2026-08-26T11:45:46.000Z"
     },
     {
       "ticker": "ELUX B",
       "name": "Electrolux B",
       "symbol": "ELUX-B.ST",
-      "price": 29.26,
-      "changePercent": -1.3486176668914316,
-      "strength": 21,
+      "price": 29.36,
+      "changePercent": -1.0114632501685796,
+      "strength": 22,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:05.000Z"
+      "marketTime": "2026-08-26T11:45:00.000Z"
     },
     {
       "ticker": "ERIC B",
       "name": "Ericsson B",
       "symbol": "ERIC-B.ST",
-      "price": 97.72,
-      "changePercent": 0.08193363375665537,
+      "price": 97.7,
+      "changePercent": 0.06145022531749515,
       "strength": 47,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-18",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:22.000Z"
+      "marketTime": "2026-08-26T11:44:59.000Z"
     },
     {
       "ticker": "ESSITY B",
       "name": "Essity B",
       "symbol": "ESSITY-B.ST",
-      "price": 281.4,
-      "changePercent": 0.24937655860348723,
+      "price": 281.5,
+      "changePercent": 0.28500178126113695,
       "strength": 70,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:12:55.000Z"
+      "marketTime": "2026-08-26T11:43:49.000Z"
     },
     {
       "ticker": "EVO",
       "name": "Evolution",
       "symbol": "EVO.ST",
-      "price": 837,
-      "changePercent": -0.23837902264600713,
-      "strength": 78,
+      "price": 836.4,
+      "changePercent": -0.309892729439812,
+      "strength": 77,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:33.000Z"
+      "marketTime": "2026-08-26T11:45:30.000Z"
     },
     {
       "ticker": "GETI B",
       "name": "Getinge B",
       "symbol": "GETI-B.ST",
-      "price": 244.8,
-      "changePercent": 0.6165228113440198,
-      "strength": 83,
+      "price": 244.6,
+      "changePercent": 0.5343197698314767,
+      "strength": 82,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:43.000Z"
+      "marketTime": "2026-08-26T11:43:05.000Z"
     },
     {
       "ticker": "HM B",
       "name": "H&M B",
       "symbol": "HM-B.ST",
-      "price": 179.35,
-      "changePercent": -2.791327913279136,
-      "strength": 58,
+      "price": 179.7,
+      "changePercent": -2.6016260162601688,
+      "strength": 59,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:26.000Z"
+      "marketTime": "2026-08-26T11:45:57.000Z"
     },
     {
       "ticker": "HEXA B",
       "name": "Hexagon B",
       "symbol": "HEXA-B.ST",
-      "price": 100.7,
-      "changePercent": -0.09920634920634357,
+      "price": 100.8,
+      "changePercent": 0,
       "strength": 55,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:39.000Z"
+      "marketTime": "2026-08-26T11:45:06.000Z"
     },
     {
       "ticker": "INVE B",
       "name": "Investor B",
       "symbol": "INVE-B.ST",
-      "price": 416.3,
-      "changePercent": 0.20459742447948556,
-      "strength": 78,
+      "price": 416.7,
+      "changePercent": 0.3008785654110001,
+      "strength": 79,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:35.000Z"
+      "marketTime": "2026-08-26T11:46:01.000Z"
     },
     {
       "ticker": "INDU C",
       "name": "Industrivarden C",
       "symbol": "INDU-C.ST",
-      "price": 539.2,
-      "changePercent": 0.48453224002982154,
+      "price": 539.6,
+      "changePercent": 0.5590756615728661,
       "strength": 75,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:42.000Z"
+      "marketTime": "2026-08-26T11:45:04.000Z"
     },
     {
       "ticker": "KINV B",
       "name": "Kinnevik B",
       "symbol": "KINV-B.ST",
-      "price": 58.56,
-      "changePercent": -0.8130081300812955,
-      "strength": 32,
+      "price": 58.62,
+      "changePercent": -0.7113821138211411,
+      "strength": 33,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:10.000Z"
+      "marketTime": "2026-08-26T11:42:30.000Z"
     },
     {
       "ticker": "NIBE B",
       "name": "NIBE-B",
       "symbol": "NIBE-B.ST",
-      "price": 41.64,
-      "changePercent": -2.0926404890665427,
+      "price": 41.65,
+      "changePercent": -2.0691276745826532,
       "strength": 55,
       "event": "Svag handelsdag i senaste uppdateringen.",
       "reportDate": "2026-05-14",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:34.000Z"
+      "marketTime": "2026-08-26T11:45:29.000Z"
     },
     {
       "ticker": "NDA SE",
       "name": "Nordea",
       "symbol": "NDA-SE.ST",
-      "price": 194.2,
-      "changePercent": 0.6217616580310822,
+      "price": 194.3,
+      "changePercent": 0.6735751295336847,
       "strength": 83,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-16",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:50.000Z"
+      "marketTime": "2026-08-26T11:45:57.000Z"
     },
     {
       "ticker": "SAND",
       "name": "Sandvik",
       "symbol": "SAND.ST",
-      "price": 397.3,
-      "changePercent": 0.6332320162107395,
-      "strength": 79,
+      "price": 398.9,
+      "changePercent": 1.0385005065856043,
+      "strength": 80,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:37.000Z"
+      "marketTime": "2026-08-26T11:45:57.000Z"
     },
     {
       "ticker": "SCA B",
       "name": "SCA B",
       "symbol": "SCA-B.ST",
-      "price": 112.25,
-      "changePercent": 0.2232142857142857,
+      "price": 112.35,
+      "changePercent": 0.31249999999999495,
       "strength": 47,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:13.000Z"
+      "marketTime": "2026-08-26T11:44:49.000Z"
     },
     {
       "ticker": "SEB A",
       "name": "SEB A",
       "symbol": "SEB-A.ST",
-      "price": 222.3,
-      "changePercent": 1.1373976342129208,
-      "strength": 79,
+      "price": 222.7,
+      "changePercent": 1.3193812556869777,
+      "strength": 80,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:09.000Z"
+      "marketTime": "2026-08-26T11:45:55.000Z"
     },
     {
       "ticker": "SHB A",
       "name": "Handelsbanken A",
       "symbol": "SHB-A.ST",
-      "price": 145.85,
-      "changePercent": 0.48225973131242755,
-      "strength": 76,
+      "price": 145.95,
+      "changePercent": 0.5511539786427716,
+      "strength": 77,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:24.000Z"
+      "marketTime": "2026-08-26T11:45:58.000Z"
     },
     {
       "ticker": "SKF B",
       "name": "SKF B",
       "symbol": "SKF-B.ST",
-      "price": 275.3,
-      "changePercent": 1.1388684790595234,
-      "strength": 86,
+      "price": 275.4,
+      "changePercent": 1.1756061719323985,
+      "strength": 85,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:06.000Z"
+      "marketTime": "2026-08-26T11:45:41.000Z"
     },
     {
       "ticker": "SWED A",
       "name": "Swedbank A",
       "symbol": "SWED-A.ST",
-      "price": 373.7,
-      "changePercent": 1.2737127371273682,
+      "price": 374.1,
+      "changePercent": 1.3821138211382176,
       "strength": 78,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:45.000Z"
+      "marketTime": "2026-08-26T11:45:57.000Z"
     },
     {
       "ticker": "TEL2 B",
       "name": "Tele2 B",
       "symbol": "TEL2-B.ST",
-      "price": 170.65,
-      "changePercent": 0.1761080129145943,
-      "strength": 50,
+      "price": 170.75,
+      "changePercent": 0.2348106838861202,
+      "strength": 51,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:32.000Z"
+      "marketTime": "2026-08-26T11:45:59.000Z"
     },
     {
       "ticker": "TELIA",
       "name": "Telia Company",
       "symbol": "TELIA.ST",
-      "price": 43.77,
-      "changePercent": -0.5905064728594095,
+      "price": 43.75,
+      "changePercent": -0.6359300476947561,
       "strength": 50,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:31.000Z"
+      "marketTime": "2026-08-26T11:44:55.000Z"
     },
     {
       "ticker": "VOLV B",
       "name": "Volvo B",
       "symbol": "VOLV-B.ST",
-      "price": 352.5,
-      "changePercent": 0.4559703619264813,
+      "price": 352.8,
+      "changePercent": 0.5414648047876985,
       "strength": 73,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:18.000Z"
+      "marketTime": "2026-08-26T11:45:42.000Z"
     },
     {
       "ticker": "SAAB B",
       "name": "Saab B",
       "symbol": "SAAB-B.ST",
-      "price": 627.1,
-      "changePercent": -1.7392666875587623,
-      "strength": 52,
-      "event": "Svag handelsdag i senaste uppdateringen.",
+      "price": 632.4,
+      "changePercent": -0.9088060169226053,
+      "strength": 55,
+      "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:14:13.000Z"
+      "marketTime": "2026-08-26T11:46:01.000Z"
     },
     {
       "ticker": "SINCH",
       "name": "Sinch",
       "symbol": "SINCH.ST",
-      "price": 45.46,
-      "changePercent": -0.19758507135015654,
-      "strength": 81,
+      "price": 45.25,
+      "changePercent": -0.6586169045005427,
+      "strength": 79,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-08-26T11:13:10.000Z"
+      "marketTime": "2026-08-26T11:45:49.000Z"
     }
   ]
 }
