@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T16:31:22.624Z",
+  "generatedAt": "2026-08-31T21:34:56.638Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -360,7 +360,7 @@
       "symbol": "SINCH.ST",
       "price": 46.57,
       "changePercent": -1.3347457627118697,
-      "strength": 75,
+      "strength": 76,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
