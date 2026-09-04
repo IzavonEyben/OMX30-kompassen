@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T01:25:08.435Z",
+  "generatedAt": "2026-09-04T06:11:00.412Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -156,7 +156,7 @@
       "symbol": "HM-B.ST",
       "price": 172.4,
       "changePercent": 0.32004655222578493,
-      "strength": 56,
+      "strength": 54,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
@@ -300,7 +300,7 @@
       "symbol": "SWED-A.ST",
       "price": 382.4,
       "changePercent": 1.1372652737370945,
-      "strength": 82,
+      "strength": 81,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
