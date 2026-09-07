@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T00:19:39.577Z",
+  "generatedAt": "2026-09-07T02:12:01.238Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -132,7 +132,7 @@
       "symbol": "EVO.ST",
       "price": 846,
       "changePercent": 0.07097232079489268,
-      "strength": 82,
+      "strength": 81,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
@@ -196,7 +196,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-09-04T15:29:42.000Z"
+      "marketTime": "2026-09-04T15:29:43.000Z"
     },
     {
       "ticker": "KINV B",
@@ -328,7 +328,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-09-04T15:29:50.000Z"
+      "marketTime": "2026-09-04T15:29:49.000Z"
     },
     {
       "ticker": "VOLV B",
