@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T01:33:00.563Z",
+  "generatedAt": "2026-09-14T02:44:13.373Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -156,7 +156,7 @@
       "symbol": "HM-B.ST",
       "price": 164.4,
       "changePercent": 0.03042287800426612,
-      "strength": 43,
+      "strength": 42,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
@@ -172,7 +172,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-09-11T15:29:53.000Z"
+      "marketTime": "2026-09-11T15:29:54.000Z"
     },
     {
       "ticker": "INVE B",
@@ -228,7 +228,7 @@
       "symbol": "NDA-SE.ST",
       "price": 200.3,
       "changePercent": 0.8052340211374045,
-      "strength": 84,
+      "strength": 83,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-16",
       "marketState": "UNKNOWN",
