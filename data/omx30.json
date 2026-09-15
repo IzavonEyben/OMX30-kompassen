@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:57:18.328Z",
+  "generatedAt": "2026-09-15T05:49:37.562Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -156,7 +156,7 @@
       "symbol": "HM-B.ST",
       "price": 165.7,
       "changePercent": 0.7907542579075323,
-      "strength": 46,
+      "strength": 45,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
