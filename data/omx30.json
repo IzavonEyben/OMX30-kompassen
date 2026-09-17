@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T01:20:09.355Z",
+  "generatedAt": "2026-09-17T06:11:56.595Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -108,7 +108,7 @@
       "symbol": "ERIC-B.ST",
       "price": 98.96,
       "changePercent": 0.8766564729867476,
-      "strength": 50,
+      "strength": 49,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-18",
       "marketState": "UNKNOWN",
