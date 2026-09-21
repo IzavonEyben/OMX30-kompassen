@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T01:33:34.946Z",
+  "generatedAt": "2026-09-21T02:40:50.934Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -84,7 +84,7 @@
       "symbol": "BOL.ST",
       "price": 531.4,
       "changePercent": -1.4831294030404154,
-      "strength": 46,
+      "strength": 45,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
