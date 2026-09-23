@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T00:53:02.846Z",
+  "generatedAt": "2026-09-23T05:18:36.396Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -120,7 +120,7 @@
       "symbol": "ESSITY-B.ST",
       "price": 265.6,
       "changePercent": 1.2581014105985555,
-      "strength": 55,
+      "strength": 53,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
@@ -156,7 +156,7 @@
       "symbol": "HM-B.ST",
       "price": 168,
       "changePercent": 3.3528145186096516,
-      "strength": 51,
+      "strength": 48,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-03-27",
       "marketState": "UNKNOWN",
