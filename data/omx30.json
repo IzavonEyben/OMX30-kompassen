@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T00:12:53.422Z",
+  "generatedAt": "2026-09-28T02:54:18.337Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -48,7 +48,7 @@
       "symbol": "AZN.ST",
       "price": 1640.5,
       "changePercent": 0.6441717791411044,
-      "strength": 51,
+      "strength": 50,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-30",
       "marketState": "UNKNOWN",
@@ -84,7 +84,7 @@
       "symbol": "BOL.ST",
       "price": 521,
       "changePercent": 0.5791505791505791,
-      "strength": 47,
+      "strength": 46,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
@@ -280,7 +280,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-09-25T15:29:54.000Z"
+      "marketTime": "2026-09-25T15:29:53.000Z"
     },
     {
       "ticker": "SKF B",
