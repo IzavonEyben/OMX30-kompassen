@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T23:38:43.909Z",
+  "generatedAt": "2026-10-01T02:23:39.179Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -192,7 +192,7 @@
       "symbol": "INDU-C.ST",
       "price": 528.8,
       "changePercent": -1.2327231976092683,
-      "strength": 67,
+      "strength": 66,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
@@ -240,7 +240,7 @@
       "symbol": "SAND.ST",
       "price": 375.8,
       "changePercent": -0.713342140026417,
-      "strength": 65,
+      "strength": 64,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
