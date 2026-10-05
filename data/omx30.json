@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T01:06:23.298Z",
+  "generatedAt": "2026-10-05T03:22:59.326Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -84,7 +84,7 @@
       "symbol": "BOL.ST",
       "price": 519.6,
       "changePercent": 3.7125748502994056,
-      "strength": 53,
+      "strength": 52,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
@@ -304,7 +304,7 @@
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-10-02T15:29:39.000Z"
+      "marketTime": "2026-10-02T15:29:40.000Z"
     },
     {
       "ticker": "TEL2 B",
