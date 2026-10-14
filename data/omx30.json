@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T00:38:00.552Z",
+  "generatedAt": "2026-10-14T05:20:45.179Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -228,7 +228,7 @@
       "symbol": "NDA-SE.ST",
       "price": 189.3,
       "changePercent": 0.21175224986765784,
-      "strength": 64,
+      "strength": 63,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-16",
       "marketState": "UNKNOWN",
