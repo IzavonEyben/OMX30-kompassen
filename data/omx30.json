@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T00:05:39.557Z",
+  "generatedAt": "2026-10-19T02:40:19.921Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -192,7 +192,7 @@
       "symbol": "INDU-C.ST",
       "price": 515.8,
       "changePercent": 1.0184097140618746,
-      "strength": 68,
+      "strength": 67,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-25",
       "marketState": "UNKNOWN",
@@ -336,7 +336,7 @@
       "symbol": "VOLV-B.ST",
       "price": 325.4,
       "changePercent": 1.7829214888958365,
-      "strength": 63,
+      "strength": 62,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
