@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T23:55:41.558Z",
+  "generatedAt": "2026-10-20T03:00:03.015Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -240,7 +240,7 @@
       "symbol": "SAND.ST",
       "price": 356.7,
       "changePercent": 0.16849199663015046,
-      "strength": 59,
+      "strength": 57,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
