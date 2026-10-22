@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T00:33:59.175Z",
+  "generatedAt": "2026-10-22T05:17:09.556Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -144,7 +144,7 @@
       "symbol": "GETI-B.ST",
       "price": 264.9,
       "changePercent": 2.002310358105502,
-      "strength": 87,
+      "strength": 86,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
@@ -324,7 +324,7 @@
       "symbol": "TELIA.ST",
       "price": 46.05,
       "changePercent": -0.3678061445261829,
-      "strength": 59,
+      "strength": 58,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
