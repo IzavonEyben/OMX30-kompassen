@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T22:00:56.133Z",
+  "generatedAt": "2026-10-22T00:33:59.175Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -144,7 +144,7 @@
       "symbol": "GETI-B.ST",
       "price": 264.9,
       "changePercent": 2.002310358105502,
-      "strength": 86,
+      "strength": 87,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
