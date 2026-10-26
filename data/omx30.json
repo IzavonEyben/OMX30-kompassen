@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T00:36:24.553Z",
+  "generatedAt": "2026-10-26T02:35:11.567Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -168,7 +168,7 @@
       "symbol": "HEXA-B.ST",
       "price": 106.05,
       "changePercent": 3.9196472317491424,
-      "strength": 73,
+      "strength": 75,
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-26",
       "marketState": "UNKNOWN",
@@ -252,7 +252,7 @@
       "symbol": "SCA-B.ST",
       "price": 124.9,
       "changePercent": -0.7154213036565911,
-      "strength": 71,
+      "strength": 72,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-28",
       "marketState": "UNKNOWN",
