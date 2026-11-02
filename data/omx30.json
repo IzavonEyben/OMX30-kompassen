@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T02:37:40.925Z",
+  "generatedAt": "2026-11-02T03:44:37.465Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -204,7 +204,7 @@
       "symbol": "KINV-B.ST",
       "price": 70.66,
       "changePercent": 0.7126567844925884,
-      "strength": 54,
+      "strength": 55,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
@@ -328,7 +328,7 @@
       "event": "Stark handelsdag i senaste uppdateringen.",
       "reportDate": "2026-04-24",
       "marketState": "UNKNOWN",
-      "marketTime": "2026-10-30T11:59:42.000Z"
+      "marketTime": "2026-10-30T11:59:43.000Z"
     },
     {
       "ticker": "VOLV B",
