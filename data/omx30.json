@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T03:38:40.820Z",
+  "generatedAt": "2026-11-16T04:07:22.899Z",
   "source": {
     "provider": "Yahoo Finance chart endpoint",
     "type": "exchange-delayed quote feed (fallback)",
@@ -312,7 +312,7 @@
       "symbol": "TEL2-B.ST",
       "price": 165.7,
       "changePercent": 0.9442583003350489,
-      "strength": 47,
+      "strength": 46,
       "event": "Lugnt handelslage i senaste uppdateringen.",
       "reportDate": "2026-04-23",
       "marketState": "UNKNOWN",
